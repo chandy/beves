@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Eve / Vercel local state
+.eve/
+.vercel/
+.env
+.env.local
+.env.*.local
+
+# Build / caches
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.turbo/
+.swc/
+
+# OS / editor
+.DS_Store
+*.log
+.output/

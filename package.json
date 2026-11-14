@@ -1,0 +1,25 @@
+{
+  "name": "beves",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Minimal Eve Slack office-hours Q&A agent",
+  "type": "module",
+  "scripts": {
+    "dev": "eve dev",
+    "build": "eve build",
+    "start": "eve start",
+    "deploy": "eve deploy",
+    "link": "eve link",
+    "info": "eve info --json"
+  },
+  "dependencies": {
+    "@vercel/connect": "2.7.0",
+    "ai": "^7.0.172",
+    "eve": "^1.0.0-rc.18",
+    "zod": "4.6.7"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.28.0"
+}
