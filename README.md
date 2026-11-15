@@ -31,9 +31,9 @@ Chris (or whoever owns the Vercel/Slack workspace) must finish Connect OAuth and
 → **[docs/eve-slack-agent-setup.md](./docs/eve-slack-agent-setup.md)** (also mirrored in the Project store). See [Eve Slack channel docs](https://eve.dev/docs/channels/slack).
 
 ```bash
-pnpm link          # or: eve link
+pnpm run link          # or: eve link
 npx eve add channel/slack --skip-install   # finishes Connect if not done
-pnpm deploy        # or: eve deploy
+pnpm run deploy        # or: eve deploy
 ```
 
 Then invite the bot to a private channel, @mention it, or DM it.

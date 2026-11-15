@@ -11,7 +11,7 @@ Official references: [Eve getting started](https://eve.dev/docs/getting-started)
 - Eve agent scaffold (`agent/agent.ts`, `instructions.md`)
 - Slack channel wired for **Vercel Connect** (`agent/channels/slack.ts`)
 - One light tool: `lookup_company_doc` over seeded `knowledge/*.md` notes
-- Scripts: `pnpm dev` / `pnpm link` / `pnpm deploy`
+- Scripts: `pnpm dev` / `pnpm run link` / `pnpm run deploy`
 
 You still must do browser/OAuth steps (Vercel login, Slack install, Connect) yourself. No bot token belongs in git.
 
@@ -51,7 +51,7 @@ In the TUI, `/model` if you need a provider, then ask a question like “What’
 From the repo root:
 
 ```bash
-pnpm link
+pnpm run link
 # same as: npx eve link
 ```
 
@@ -135,7 +135,7 @@ Do **not** commit tokens. With Connect you should **not** need `SLACK_BOT_TOKEN`
 ## 5. Deploy (`eve deploy`)
 
 ```bash
-pnpm deploy
+pnpm run deploy
 # same as: npx eve deploy
 ```
 
