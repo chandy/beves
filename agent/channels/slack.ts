@@ -12,6 +12,7 @@ export default slackChannel({
   credentials: connectSlackCredentials(
     process.env.SLACK_CONNECTOR ?? "slack/beves",
   ),
+  codeChannels: true,
 
   // Answer @mentions and DMs from people; ignore other bots.
   onAppMention: (ctx, message) =>
