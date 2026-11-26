@@ -13,9 +13,9 @@
     "info": "eve info --json"
   },
   "dependencies": {
-    "@vercel/connect": ">=0.4.2",
-    "ai": "^7.0.172",
-    "eve": "^1.0.0-rc.18",
+    "@vercel/connect": "^2.9.6",
+    "ai": "^7.0.182",
+    "eve": "^1.5.0",
     "zod": "4.6.7"
   },
   "engines": {
