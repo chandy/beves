@@ -170,6 +170,19 @@ npx eve remote connect --url https://<your-host>
 
 Slack events go Connect → your **deployed** `/eve/v1/slack` route. Local `pnpm dev` does not receive Slack webhooks.
 
+### UI demo card (Eve Cards → Block Kit)
+
+[UI SDK](https://ui-sdk.dev/) is a **browser** behavior library — it does not render inside Slack. This agent’s Slack “rich UI” path uses **Eve Cards**, which convert to Slack **Block Kit** at post time (the Eve-native pattern).
+
+After deploy:
+
+1. `@mention` the bot (or DM): **“show the UI demo”** (or “selection” / “schedule” / “office-hours” UI demo).
+2. The agent calls `show_ui_demo`; Slack posts an interactive card in the thread.
+3. Use the **select menu** and **buttons** on the card; replies acknowledge the click.
+4. Optional: open https://ui-sdk.dev/ from the card’s link for the real browser gallery.
+
+No extra env vars or npm packages for this demo. Existing Connect / `SLACK_CONNECTOR` setup is enough.
+
 ---
 
 ## Alternative: portable Slack credentials (self-managed app)

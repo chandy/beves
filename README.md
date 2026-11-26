@@ -11,6 +11,8 @@ Minimal [Eve](https://eve.dev) agent for Slack Q&A (idea 2 from the Project samp
 | `agent/channels/slack.ts` | Slack via Vercel Connect |
 | `agent/channels/eve.ts` | Default HTTP / TUI channel |
 | `agent/tools/lookup_company_doc.ts` | Keyword lookup over `knowledge/` |
+| `agent/tools/show_ui_demo.ts` | Slack UI demo card (Eve Cards → Block Kit) |
+| `agent/lib/ui-demo-card.ts` | Card builders + interaction helpers |
 | `knowledge/*.md` | Seeded company notes (demo content) |
 
 ## Quick start (local TUI)
@@ -37,6 +39,10 @@ pnpm run deploy        # or: eve deploy
 ```
 
 Then invite the bot to a private channel, @mention it, or DM it.
+
+### UI demo in Slack
+
+After deploy, `@mention` with **“show the UI demo”**. The bot posts an interactive Eve Card (Block Kit). Browser [UI SDK](https://ui-sdk.dev/) does not run in Slack — see [setup § UI demo](./docs/eve-slack-agent-setup.md#ui-demo-card-eve-cards--block-kit).
 
 ## Health check
 
